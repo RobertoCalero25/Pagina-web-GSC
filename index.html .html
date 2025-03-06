@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Cursos-Global Supply Chain</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        img {
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inscripción a Cursos GSC</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Sociedad_Minera_Cerro_Verde.jpg" alt="Programa de capacitación Sociedad Minera Cerro Verde">
+    <div class="container">
+        <h2>Formulario de Inscripción</h2>
+        <form id="inscripcionForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" required>
+
+            <label for="area">Área de Trabajo:</label>
+            <select id="area" required>
+                <option value="almacen1">ALMACEN 1</option>
+                <option value="almacen2">ALMACEN 2</option>
+                <option value="almacen3">ALMACEN 3</option>
+                <option value="bulks">BULKS</option>
+            </select>
+
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" required>
+
+            <button type="submit">Inscribirse</button>
+        </form>
+    </div>
+</body>
+</html>
